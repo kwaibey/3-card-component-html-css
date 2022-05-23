@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+body .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    color: #fff;
+    padding: 40px;
+    margin: 0 0px;
+    box-sizing: border-box;
+}
+
+.card img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.card h1{
+    font-size: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.card p{
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 100%;
+}
+
+.card-color1 {
+    background: hsl(31, 77%, 52%);
+    border: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.card-color2 {
+    background: hsl(184, 100%, 22%);
+    border: 0px;
+}
+
+.card-color3 {
+    background: hsl(179, 100%, 13%);
+    border: 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+.btn{
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 70px;
+    border: 2px solid hsl(0, 0%, 95%);
+    background: hsl(0, 0%, 95%);
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.btn-c1{
+    color: hsl(31, 77%, 52%);
+}
+.btn-c2{
+    color: hsl(184, 100%, 22%);
+}
+.btn-c3{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover{
+    background: none;
+    color: hsl(0, 0%, 95%);
+}
+
+
+@media only screen and (max-width: 960px){
+    body .row {
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 400px;
+    }
+    .card{
+        width: 375px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .btn{
+        margin-right: 140px;
+        margin-top: 20px;
+    }
+
+    .card p{
+        margin-bottom: 10px;
+        margin-right: 55px;
+    }
+
+    .card-color1 {
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    
+    .card-color3 {
+        border-radius: 0px 0px 5px 5px;
+    }
+}
